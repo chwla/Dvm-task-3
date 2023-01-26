@@ -56,6 +56,16 @@
 
     <img class="iii"  id="a2" src="https://www.weswwim.com/_next/image?url=%2Ficons%2Fbottle-right.svg&w=1920&q=75" alt="">
     <img class="si2" src="https://www.weswwim.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fja7gk6cd%2Fproduction%2F525d6729ac1f4974d4379d18940b0f76d498289e-1053x1221.jpg%3Frect%3D0%2C40%2C1053%2C1141%26w%3D600%26h%3D650%26q%3D95%26fit%3Dclip%26auto%3Dformat&w=1200&q=75" alt="">
+    <h1 id="text00">Circular-text-effect</h1>
+    <img  class="iii3" src="	https://www.weswwim.com/_next/image?url=%2Ficons%2Finsta-profile.svg&w=1200&q=75" alt="">
+    <script>
+      const text = document.getElementById('text00');
+      text.innerHTML = text.textContent.replace(/\S/g,"<span>$&</span>");
+      const ele = document.querySelectorAll('span');
+      for(var i = 1;i<ele.length;i++){
+        ele[i].style.transform="rotate("+i*16.5+"deg)";
+      }
+    </script>
     <img class="si3" src="https://www.weswwim.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fja7gk6cd%2Fproduction%2F1eef62a20b4241c4bd62f4006506b301e01295cd-1059x1374.jpg%3Frect%3D5%2C0%2C1050%2C1374%26w%3D550%26h%3D720%26q%3D95%26fit%3Dclip%26auto%3Dformat&w=1920&q=75" alt="">
   </div>
 
